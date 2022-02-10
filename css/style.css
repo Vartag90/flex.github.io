@@ -97,8 +97,6 @@
 .list-one,
 .list-two {
   height: 125px;
-  -o-object-fit: contain;
-     object-fit: contain;
   margin: 70px 0;
 }
 
@@ -107,19 +105,11 @@
   padding: 0 0 17px 30px;
   font-family: Arial;
   font-size: 20px;
-}
-
-.list-one li::before,
-.list-two li::before {
-  content: "";
-  width: 25px;
-  height: 19px;
-  display: inline-block;
   background: url("../img/icons/check-icon.png") no-repeat;
 }
 
 .submit button {
-  padding: 0 10px 15px;
+  padding: 0 27px 15px 10px;
   border-radius: 30px;
   width: 199px;
   height: 44px;
@@ -129,16 +119,8 @@
   letter-spacing: 2.8px;
   color: #fff;
   text-transform: uppercase;
+  background: #81b8b5 url("../img/icons/arrow.svg") 160px center no-repeat;
   margin: 0 30px;
-  display: inline-block;
-}
-
-.submit button::after {
-  content: "";
-  width: 21px;
-  height: 14px;
-  display: inline-block;
-  background: url("../img/icons/arrow.svg") center no-repeat;
 }
 
 .form {
@@ -184,19 +166,4 @@
   -webkit-box-shadow: 0 0 20px 0 rgba(127, 190, 213, 0.93);
           box-shadow: 0 0 20px 0 rgba(127, 190, 213, 0.93);
   border: solid 1px #7fbed5;
-}
-
-.text p {
-  font-size: 24px;
-  line-height: 40px;
-  margin: 40px 0;
-}
-
-.paragraph-one::first-line {
-  color: red;
-}
-
-.paragraph-two::first-letter {
-  font-size: 40px;
-  color: green;
 }
