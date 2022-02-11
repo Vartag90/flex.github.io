@@ -2,3 +2,78 @@
 @import "nullstyle.scss";
 
 // Основные стили
+
+.about {
+	&__body {
+		max-width: 823px;
+		margin: 0 auto;
+	}
+	&__header {
+		margin: 0 0 65px 0;
+	}
+	&__title {
+		margin: 0 0 35px 0;
+	}
+	&__text {
+		max-width: 688px;
+		margin: 20px auto;
+		font-weight: 300;
+		line-height: 1.86;
+		text-align: center;
+		color: #868585;
+	}
+	&__row {
+		display: flex;
+		font-size: 0;
+		margin: 0 -15px;
+	}
+	&__column {
+		padding: 0 15px;
+		flex: 0 0 33.333%;
+	}
+}
+.title {
+	font-size: 34px;
+	font-weight: bold;
+	letter-spacing: 8.95px;
+	color: #000;
+	text-transform: uppercase;
+	text-align: center;
+	position: relative;
+	&::after {
+		content: "";
+		display: block;
+		width: 100px;
+		height: 1px;
+		margin: 30px auto;
+		background-color: #000;
+	}
+}
+.item-about {
+	&__icon {
+		width: 92px;
+		height: 92px;
+		border-radius: 50%;
+		border: 2px solid #f0f0f0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 30px auto;
+	}
+	&__title {
+		text-transform: uppercase;
+		margin: 0 0 35px 0;
+		font-size: 22px;
+		letter-spacing: 3.52px;
+		text-align: center;
+		color: #000;
+	}
+	&__text {
+		margin: 36px 0 0;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 1.86;
+		text-align: center;
+		color: #868585;
+	}
+}
